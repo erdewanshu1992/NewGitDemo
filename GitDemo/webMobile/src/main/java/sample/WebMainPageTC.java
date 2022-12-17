@@ -176,6 +176,7 @@ public class WebMainPageTC extends AndroidChromeTest {
 	public void PopUpVerify() throws InterruptedException {
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.PopUpVerify();
+		Thread.sleep(5000);
 	}
 
 }
