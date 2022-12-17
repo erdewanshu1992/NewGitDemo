@@ -3,6 +3,7 @@ package sample;
 import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
+	//More Bana Dunga
 	@Test
 	public void navigate_to_homepage_click_on_SetUrLocation() {
 
