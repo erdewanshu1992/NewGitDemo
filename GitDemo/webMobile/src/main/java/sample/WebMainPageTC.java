@@ -3,13 +3,14 @@ package sample;
 import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
-	@Test()
+	@Test
 	public void navigate_to_homepage_click_on_SetUrLocation() {
 
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.SetUrLocationButton();
 
 	}
+
 	@Test(dependsOnMethods = { "navigate_to_homepage_click_on_SetUrLocation" })
 	public void enter_userAddress() throws InterruptedException {
 		webMainPage webMainPage = new webMainPage(driver);
