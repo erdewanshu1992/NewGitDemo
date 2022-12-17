@@ -1,190 +1,1203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="25" failed="2" skipped="0">
+<testng-results ignored="0" total="27" passed="5" failed="20" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-17T17:28:56 IST" name="Default suite" finished-at="2022-12-17T17:31:31 IST" duration-ms="155007">
+  <suite started-at="2022-12-17T22:11:56 IST" name="Default suite" finished-at="2022-12-17T22:19:37 IST" duration-ms="461105">
     <groups>
     </groups>
-    <test started-at="2022-12-17T17:28:56 IST" name="Default test" finished-at="2022-12-17T17:31:31 IST" duration-ms="155007">
+    <test started-at="2022-12-17T22:11:56 IST" name="Default test" finished-at="2022-12-17T22:19:37 IST" duration-ms="461105">
       <class name="sample.WebMainPageTC">
-        <test-method is-config="true" signature="webBrowserlaunch()[pri:0, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:28:56 IST" name="webBrowserlaunch" finished-at="2022-12-17T17:29:45 IST" duration-ms="48810" status="PASS">
+        <test-method is-config="true" signature="webBrowserlaunch()[pri:0, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:11:56 IST" name="webBrowserlaunch" finished-at="2022-12-17T22:14:09 IST" duration-ms="133057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webBrowserlaunch -->
-        <test-method signature="navigate_to_homepage_click_on_SetUrLocation()[pri:0, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:29:45 IST" name="navigate_to_homepage_click_on_SetUrLocation" finished-at="2022-12-17T17:29:46 IST" duration-ms="659" status="PASS">
+        <test-method signature="navigate_to_homepage_click_on_SetUrLocation()[pri:0, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:14:09 IST" name="navigate_to_homepage_click_on_SetUrLocation" finished-at="2022-12-17T22:14:09 IST" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate_to_homepage_click_on_SetUrLocation -->
-        <test-method signature="enter_userAddress()[pri:0, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:29:46 IST" name="enter_userAddress" finished-at="2022-12-17T17:29:52 IST" depends-on-methods="sample.WebMainPageTC.navigate_to_homepage_click_on_SetUrLocation" duration-ms="6792" status="PASS">
+        <test-method signature="enter_userAddress()[pri:0, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:14:09 IST" name="enter_userAddress" finished-at="2022-12-17T22:14:44 IST" depends-on-methods="sample.WebMainPageTC.navigate_to_homepage_click_on_SetUrLocation" duration-ms="34450" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=108.0.5359.79)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, sendKeysToElement {id=86546a0b-c1bf-4dc4-9aa0-5b3eec05dc1f, value=[Ljava.lang.CharSequence;@1b7cae6f}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: (//input[@type="text"])[3]]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.79)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, sendKeysToElement {id=86546a0b-c1bf-4dc4-9aa0-5b3eec05dc1f, value=[Ljava.lang.CharSequence;@1b7cae6f}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: (//input[@type="text"])[3]]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at sample.webMainPage.enterAddressName(webMainPage.java:100)
+at sample.WebMainPageTC.enter_userAddress(WebMainPageTC.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_userAddress -->
-        <test-method signature="MainCatSalonAtHome()[pri:3, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:29:52 IST" name="MainCatSalonAtHome" finished-at="2022-12-17T17:30:01 IST" duration-ms="8297" status="PASS">
+        <test-method signature="MainCatSalonAtHome()[pri:2, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:14:44 IST" name="MainCatSalonAtHome" finished-at="2022-12-17T22:14:54 IST" duration-ms="10218" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=108.0.5359.79)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, clickElement {id=1a516432-e77f-4fe1-8502-0b42b8e0929b}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: (//div[@class='cat_card'])[1]]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.79)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, clickElement {id=1a516432-e77f-4fe1-8502-0b42b8e0929b}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: (//div[@class='cat_card'])[1]]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.SalonAtHome(webMainPage.java:115)
+at sample.WebMainPageTC.MainCatSalonAtHome(WebMainPageTC.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainCatSalonAtHome -->
-        <test-method signature="BestSellersVerify()[pri:4, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:01 IST" name="BestSellersVerify" finished-at="2022-12-17T17:30:07 IST" duration-ms="5984" status="PASS">
+        <test-method signature="BestSellersVerify()[pri:3, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:14:54 IST" name="BestSellersVerify" finished-at="2022-12-17T22:15:04 IST" duration-ms="10160" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='subcat_img'])[1]"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=(//div[@class='subcat_img'])[1]}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='subcat_img'])[1]"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=(//div[@class='subcat_img'])[1]}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.BestSellersVerify(webMainPage.java:119)
+at sample.WebMainPageTC.BestSellersVerify(WebMainPageTC.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BestSellersVerify -->
-        <test-method signature="AddToCartButtonClicked()[pri:0, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:07 IST" name="AddToCartButtonClicked" finished-at="2022-12-17T17:30:07 IST" depends-on-methods="sample.WebMainPageTC.BestSellersVerify" duration-ms="655" status="PASS">
+        <test-method signature="AddToCartButtonClicked()[pri:0, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:04 IST" name="AddToCartButtonClicked" finished-at="2022-12-17T22:15:04 IST" depends-on-methods="sample.WebMainPageTC.BestSellersVerify" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebMainPageTC.AddToCartButtonClicked()[pri:0, instance:sample.WebMainPageTC@3ee37e5a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebMainPageTC.AddToCartButtonClicked()[pri:0, instance:sample.WebMainPageTC@3ee37e5a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartButtonClicked -->
-        <test-method signature="CheckoutButtonVerify()[pri:0, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:07 IST" name="CheckoutButtonVerify" finished-at="2022-12-17T17:30:09 IST" depends-on-methods="sample.WebMainPageTC.AddToCartButtonClicked" duration-ms="1368" status="PASS">
+        <test-method signature="CheckoutButtonVerify()[pri:0, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:04 IST" name="CheckoutButtonVerify" finished-at="2022-12-17T22:15:04 IST" depends-on-methods="sample.WebMainPageTC.AddToCartButtonClicked" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method WebMainPageTC.CheckoutButtonVerify()[pri:0, instance:sample.WebMainPageTC@3ee37e5a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method WebMainPageTC.CheckoutButtonVerify()[pri:0, instance:sample.WebMainPageTC@3ee37e5a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutButtonVerify -->
-        <test-method signature="enterMobileNumber()[pri:10, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:09 IST" name="enterMobileNumber" finished-at="2022-12-17T17:30:14 IST" duration-ms="5163" status="PASS">
+        <test-method signature="enterMobileNumber()[pri:4, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:04 IST" name="enterMobileNumber" finished-at="2022-12-17T22:15:14 IST" duration-ms="10092" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='for_mob']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@class='for_mob']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='for_mob']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@class='for_mob']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at sample.webMainPage.enterMobileNumber(webMainPage.java:156)
+at sample.WebMainPageTC.enterMobileNumber(WebMainPageTC.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterMobileNumber -->
-        <test-method signature="ClickOnSubmitButton()[pri:11, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:14 IST" name="ClickOnSubmitButton" finished-at="2022-12-17T17:30:14 IST" duration-ms="346" status="PASS">
+        <test-method signature="ClickOnSubmitButton()[pri:5, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:14 IST" name="ClickOnSubmitButton" finished-at="2022-12-17T22:15:24 IST" duration-ms="10088" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btm_pas']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='btm_pas']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btm_pas']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='btm_pas']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.ClickOnSubmitButton(webMainPage.java:162)
+at sample.WebMainPageTC.ClickOnSubmitButton(WebMainPageTC.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnSubmitButton -->
-        <test-method signature="enterOTP()[pri:12, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:14 IST" name="enterOTP" finished-at="2022-12-17T17:30:15 IST" duration-ms="547" status="PASS">
+        <test-method signature="enterOTP()[pri:6, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:24 IST" name="enterOTP" finished-at="2022-12-17T22:15:34 IST" duration-ms="10108" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='otp']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='otp']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='otp']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='otp']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at sample.webMainPage.enterOTP(webMainPage.java:167)
+at sample.WebMainPageTC.enterOTP(WebMainPageTC.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterOTP -->
-        <test-method signature="ChangeButtonVerify()[pri:13, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:15 IST" name="ChangeButtonVerify" finished-at="2022-12-17T17:30:19 IST" duration-ms="4322" status="PASS">
+        <test-method signature="ChangeButtonVerify()[pri:7, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:34 IST" name="ChangeButtonVerify" finished-at="2022-12-17T22:15:45 IST" duration-ms="10105" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='change_prdt']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='change_prdt']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='change_prdt']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='change_prdt']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.ChangeButtonVerify(webMainPage.java:171)
+at sample.WebMainPageTC.ChangeButtonVerify(WebMainPageTC.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChangeButtonVerify -->
-        <test-method signature="DoneButtonVerify()[pri:14, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:19 IST" name="DoneButtonVerify" finished-at="2022-12-17T17:30:20 IST" duration-ms="602" status="PASS">
+        <test-method signature="DoneButtonVerify()[pri:8, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:45 IST" name="DoneButtonVerify" finished-at="2022-12-17T22:15:55 IST" duration-ms="10080" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='done_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='done_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='done_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='done_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.DoneButtonVerify(webMainPage.java:175)
+at sample.WebMainPageTC.DoneButtonVerify(WebMainPageTC.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoneButtonVerify -->
-        <test-method signature="RemoveButtonVerify()[pri:15, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:20 IST" name="RemoveButtonVerify" finished-at="2022-12-17T17:30:20 IST" duration-ms="317" status="PASS">
+        <test-method signature="RemoveButtonVerify()[pri:9, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:15:55 IST" name="RemoveButtonVerify" finished-at="2022-12-17T22:16:05 IST" duration-ms="10126" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='remove_prdt']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='remove_prdt']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='remove_prdt']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='remove_prdt']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.RemoveButtonVerify(webMainPage.java:179)
+at sample.WebMainPageTC.RemoveButtonVerify(WebMainPageTC.java:81)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveButtonVerify -->
-        <test-method signature="RemoveButtonNoVerify()[pri:16, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:20 IST" name="RemoveButtonNoVerify" finished-at="2022-12-17T17:30:20 IST" duration-ms="317" status="PASS">
+        <test-method signature="RemoveButtonNoVerify()[pri:10, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:05 IST" name="RemoveButtonNoVerify" finished-at="2022-12-17T22:16:15 IST" duration-ms="10122" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='no_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='no_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='no_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='no_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.RemoveButtonNoVerify(webMainPage.java:183)
+at sample.WebMainPageTC.RemoveButtonNoVerify(WebMainPageTC.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveButtonNoVerify -->
-        <test-method signature="CheckoutOnSchedulePageVerify()[pri:17, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:20 IST" name="CheckoutOnSchedulePageVerify" finished-at="2022-12-17T17:30:21 IST" duration-ms="292" status="PASS">
+        <test-method signature="CheckoutOnSchedulePageVerify()[pri:11, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:15 IST" name="CheckoutOnSchedulePageVerify" finished-at="2022-12-17T22:16:25 IST" duration-ms="10088" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id]/div/div/div/div[5]/div[2]/div[2]/span"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//*[@id]/div/div/div/div[5]/div[2]/div[2]/span}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id]/div/div/div/div[5]/div[2]/div[2]/span"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//*[@id]/div/div/div/div[5]/div[2]/div[2]/span}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.CheckoutOnSchedulePageVerify(webMainPage.java:187)
+at sample.WebMainPageTC.CheckoutOnSchedulePageVerify(WebMainPageTC.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutOnSchedulePageVerify -->
-        <test-method signature="BuildingName()[pri:18, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:21 IST" name="BuildingName" finished-at="2022-12-17T17:30:27 IST" duration-ms="6383" status="PASS">
+        <test-method signature="BuildingName()[pri:12, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:25 IST" name="BuildingName" finished-at="2022-12-17T22:16:35 IST" duration-ms="10080" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='building']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='building']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='building']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='building']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at sample.webMainPage.BuildingName(webMainPage.java:191)
+at sample.WebMainPageTC.BuildingName(WebMainPageTC.java:99)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BuildingName -->
-        <test-method signature="Address()[pri:19, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:27 IST" name="Address" finished-at="2022-12-17T17:30:31 IST" duration-ms="4409" status="PASS">
+        <test-method signature="Address()[pri:13, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:35 IST" name="Address" finished-at="2022-12-17T22:16:45 IST" duration-ms="10153" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='addressName']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='addressName']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='addressName']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//input[@name='addressName']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at sample.webMainPage.Address(webMainPage.java:196)
+at sample.WebMainPageTC.Address(WebMainPageTC.java:105)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Address -->
-        <test-method signature="SaveButtonVerify()[pri:20, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:31 IST" name="SaveButtonVerify" finished-at="2022-12-17T17:30:32 IST" duration-ms="294" status="PASS">
+        <test-method signature="SaveButtonVerify()[pri:14, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:45 IST" name="SaveButtonVerify" finished-at="2022-12-17T22:16:55 IST" duration-ms="10133" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='save_add_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='save_add_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='save_add_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='save_add_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.SaveButtonVerify(webMainPage.java:201)
+at sample.WebMainPageTC.SaveButtonVerify(WebMainPageTC.java:111)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SaveButtonVerify -->
-        <test-method signature="ChangeAddressVerify()[pri:21, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:32 IST" name="ChangeAddressVerify" finished-at="2022-12-17T17:30:37 IST" duration-ms="5451" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="ChangeAddressVerify()[pri:15, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:16:55 IST" name="ChangeAddressVerify" finished-at="2022-12-17T22:17:05 IST" duration-ms="10090" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="change_address">...</span> is not clickable at point (285, 116). Other element would receive the click: <div class="loader_sec">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='change_address']"}
   (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-56-generic', java.version: '17.0.5'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [3b91232f-6c6f-4ca3-be6b-c85931d683ad, clickElement {id=5a59c0e8-d7c0-4baf-93ff-05e0389e8fbd}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Element: [[AndroidDriver: Chrome on ANDROID (3b91232f-6c6f-4ca3-be6b-c85931d683ad)] -> xpath: //span[@class='change_address']]
-Session ID: 3b91232f-6c6f-4ca3-be6b-c85931d683ad]]>
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='change_address']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="change_address">...</span> is not clickable at point (285, 116). Other element would receive the click: <div class="loader_sec">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='change_address']"}
   (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-56-generic', java.version: '17.0.5'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [3b91232f-6c6f-4ca3-be6b-c85931d683ad, clickElement {id=5a59c0e8-d7c0-4baf-93ff-05e0389e8fbd}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Element: [[AndroidDriver: Chrome on ANDROID (3b91232f-6c6f-4ca3-be6b-c85931d683ad)] -> xpath: //span[@class='change_address']]
-Session ID: 3b91232f-6c6f-4ca3-be6b-c85931d683ad
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='change_address']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
 at sample.webMainPage.ChangeAddressVerify(webMainPage.java:206)
-at sample.WebMainPageTC.ChangeAddressVerify(WebMainPageTC.java:118)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at sample.WebMainPageTC.ChangeAddressVerify(WebMainPageTC.java:117)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChangeAddressVerify -->
-        <test-method signature="BackArrowVerify()[pri:22, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:37 IST" name="BackArrowVerify" finished-at="2022-12-17T17:30:38 IST" duration-ms="1302" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="BackArrowVerify()[pri:16, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:17:05 IST" name="BackArrowVerify" finished-at="2022-12-17T22:17:16 IST" duration-ms="10198" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element click intercepted: Element <i class="fa fa-angle-left"></i> is not clickable at point (15, 22). Other element would receive the click: <div class="loader_sec">...</div>
+              <![CDATA[element not interactable
   (Session info: chrome=108.0.5359.79)
 Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-56-generic', java.version: '17.0.5'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [3b91232f-6c6f-4ca3-be6b-c85931d683ad, clickElement {id=899d8cd8-ea51-4a73-8d5f-f7097f20d773}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Element: [[AndroidDriver: Chrome on ANDROID (3b91232f-6c6f-4ca3-be6b-c85931d683ad)] -> xpath: //i[@class='fa fa-angle-left']]
-Session ID: 3b91232f-6c6f-4ca3-be6b-c85931d683ad]]>
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, clickElement {id=26726afd-602e-4faf-986d-e879557d1e1e}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: //i[@class='fa fa-angle-left']]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-angle-left"></i> is not clickable at point (15, 22). Other element would receive the click: <div class="loader_sec">...</div>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=108.0.5359.79)
 Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-56-generic', java.version: '17.0.5'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [3b91232f-6c6f-4ca3-be6b-c85931d683ad, clickElement {id=899d8cd8-ea51-4a73-8d5f-f7097f20d773}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
-Element: [[AndroidDriver: Chrome on ANDROID (3b91232f-6c6f-4ca3-be6b-c85931d683ad)] -> xpath: //i[@class='fa fa-angle-left']]
-Session ID: 3b91232f-6c6f-4ca3-be6b-c85931d683ad
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, clickElement {id=26726afd-602e-4faf-986d-e879557d1e1e}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (2fbb00d0-2a04-4c28-86f4-fe0242321f15)] -> xpath: //i[@class='fa fa-angle-left']]
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -193,77 +1206,349 @@ at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecu
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
 at sample.webMainPage.BackArrowVerify(webMainPage.java:212)
-at sample.WebMainPageTC.BackArrowVerify(WebMainPageTC.java:125)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at sample.WebMainPageTC.BackArrowVerify(WebMainPageTC.java:124)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackArrowVerify -->
-        <test-method signature="SlotNoteAtButtonVerify()[pri:23, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:38 IST" name="SlotNoteAtButtonVerify" finished-at="2022-12-17T17:30:44 IST" duration-ms="5152" status="PASS">
+        <test-method signature="SlotNoteAtButtonVerify()[pri:17, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:17:16 IST" name="SlotNoteAtButtonVerify" finished-at="2022-12-17T22:17:26 IST" duration-ms="10121" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slot_note']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='slot_note']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='slot_note']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='slot_note']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at sample.webMainPage.SlotNoteAtButtonVerify(webMainPage.java:231)
+at sample.WebMainPageTC.SlotNoteAtButtonVerify(WebMainPageTC.java:131)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SlotNoteAtButtonVerify -->
-        <test-method signature="SavedAddressVerify()[pri:24, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:44 IST" name="SavedAddressVerify" finished-at="2022-12-17T17:30:44 IST" duration-ms="190" status="PASS">
+        <test-method signature="SavedAddressVerify()[pri:18, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:17:26 IST" name="SavedAddressVerify" finished-at="2022-12-17T22:17:36 IST" duration-ms="10062" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='address_sec']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//div[@class='address_sec']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='address_sec']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//div[@class='address_sec']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at sample.webMainPage.SavedAddressVerify(webMainPage.java:236)
+at sample.WebMainPageTC.SavedAddressVerify(WebMainPageTC.java:138)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SavedAddressVerify -->
-        <test-method signature="lostOfAllSlotsDate()[pri:25, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:30:44 IST" name="lostOfAllSlotsDate" finished-at="2022-12-17T17:31:09 IST" duration-ms="25139" status="PASS">
+        <test-method signature="lostOfAllSlotsDate()[pri:19, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:17:36 IST" name="lostOfAllSlotsDate" finished-at="2022-12-17T22:18:01 IST" duration-ms="25143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lostOfAllSlotsDate -->
-        <test-method signature="lostOfAllPrimeTimeSlotsMorVerify()[pri:26, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:31:09 IST" name="lostOfAllPrimeTimeSlotsMorVerify" finished-at="2022-12-17T17:31:14 IST" duration-ms="5229" status="PASS">
+        <test-method signature="lostOfAllPrimeTimeSlotsMorVerify()[pri:20, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:18:01 IST" name="lostOfAllPrimeTimeSlotsMorVerify" finished-at="2022-12-17T22:18:26 IST" duration-ms="25163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lostOfAllPrimeTimeSlotsMorVerify -->
-        <test-method signature="lostOfAllNormalSlotsVerify()[pri:27, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:31:14 IST" name="lostOfAllNormalSlotsVerify" finished-at="2022-12-17T17:31:19 IST" duration-ms="5288" status="PASS">
+        <test-method signature="lostOfAllNormalSlotsVerify()[pri:21, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:18:26 IST" name="lostOfAllNormalSlotsVerify" finished-at="2022-12-17T22:18:51 IST" duration-ms="25152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lostOfAllNormalSlotsVerify -->
-        <test-method signature="lostOfAllPrimeTimeSlotsEveVerify()[pri:28, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:31:19 IST" name="lostOfAllPrimeTimeSlotsEveVerify" finished-at="2022-12-17T17:31:25 IST" duration-ms="5222" status="PASS">
+        <test-method signature="lostOfAllPrimeTimeSlotsEveVerify()[pri:22, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:18:51 IST" name="lostOfAllPrimeTimeSlotsEveVerify" finished-at="2022-12-17T22:19:16 IST" duration-ms="25123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lostOfAllPrimeTimeSlotsEveVerify -->
-        <test-method signature="ProceedButtonVerify()[pri:29, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:31:25 IST" name="ProceedButtonVerify" finished-at="2022-12-17T17:31:25 IST" duration-ms="492" status="PASS">
+        <test-method signature="ProceedButtonVerify()[pri:23, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:19:16 IST" name="ProceedButtonVerify" finished-at="2022-12-17T22:19:27 IST" duration-ms="10089" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='btn_section']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='btn_section']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='btn_section']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//span[@class='btn_section']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.ProceedButtonVerify(webMainPage.java:226)
+at sample.WebMainPageTC.ProceedButtonVerify(WebMainPageTC.java:172)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProceedButtonVerify -->
-        <test-method signature="PopUpVerify()[pri:30, instance:sample.WebMainPageTC@15bb5034]" started-at="2022-12-17T17:31:25 IST" name="PopUpVerify" finished-at="2022-12-17T17:31:31 IST" duration-ms="5892" status="PASS">
+        <test-method signature="PopUpVerify()[pri:24, instance:sample.WebMainPageTC@3ee37e5a]" started-at="2022-12-17T22:19:27 IST" name="PopUpVerify" finished-at="2022-12-17T22:19:37 IST" duration-ms="10078" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='yes_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='yes_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='yes_btn']"}
+  (Session info: chrome=108.0.5359.79)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2fbb00d0-2a04-4c28-86f4-fe0242321f15, findElement {using=xpath, value=//button[@class='yes_btn']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\erdew\Desktop\Sele..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 2fbb00d0-2a04-4c28-86f4-fe0242321f15
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at sample.webMainPage.PopUpVerify(webMainPage.java:217)
+at sample.WebMainPageTC.PopUpVerify(WebMainPageTC.java:178)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PopUpVerify -->

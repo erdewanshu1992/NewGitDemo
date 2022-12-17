@@ -5,7 +5,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="webMobile"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
-        <mapEntry key="sample.WebMainPageTC" value="DoneButtonVerify;lostOfAllSlotsDate;RemoveButtonVerify;SlotNoteAtButtonVerify;SaveButtonVerify;AddToCartButtonClicked;lostOfAllPrimeTimeSlotsMorVerify;SavedAddressVerify;navigate_to_homepage_click_on_SetUrLocation;MainCatSalonAtHome;ChangeButtonVerify;BuildingName;enterOTP;BestSellersVerify;RemoveButtonNoVerify;CheckoutOnSchedulePageVerify;enterMobileNumber;ClickOnSubmitButton;ChangeAddressVerify;enter_userAddress;PopUpVerify;BackArrowVerify;CheckoutButtonVerify;lostOfAllNormalSlotsVerify;ProceedButtonVerify;Address;lostOfAllPrimeTimeSlotsEveVerify"/>
+        <mapEntry key="sample.WebMainPageTC" value="DoneButtonVerify;lostOfAllSlotsDate;enterOTP;RemoveButtonVerify;Address;SaveButtonVerify;SlotNoteAtButtonVerify;SavedAddressVerify;AddToCartButtonClicked;navigate_to_homepage_click_on_SetUrLocation;CheckoutButtonVerify;ProceedButtonVerify;ChangeAddressVerify;lostOfAllNormalSlotsVerify;enterMobileNumber;BuildingName;CheckoutOnSchedulePageVerify;PopUpVerify;lostOfAllPrimeTimeSlotsEveVerify;enter_userAddress;ChangeButtonVerify;lostOfAllPrimeTimeSlotsMorVerify;RemoveButtonNoVerify;BackArrowVerify;ClickOnSubmitButton;BestSellersVerify;MainCatSalonAtHome"/>
     </mapAttribute>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
         <listEntry value="sample.WebMainPageTC"/>
