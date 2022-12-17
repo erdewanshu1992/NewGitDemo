@@ -1,0 +1,304 @@
+package YmWebTest;
+
+import static org.testng.Assert.assertEquals;
+
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.HidesKeyboard;
+import yMWebSetUp.AndroidChromeTest;
+
+public class webMainPage extends AndroidChromeTest {
+
+	WebDriver driver;
+
+	// Main Page
+	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
+	WebElement SetUrLocationButton;
+	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
+	WebElement LocationSearch;
+
+	// MainCatSalonAtHome
+	@FindBy(xpath = "(//div[@class='cat_card'])[1]")
+	WebElement SalonAtHome;
+	@FindBy(xpath = "(//div[@class='subcat_img'])[1]")
+	WebElement BestSellers;
+	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
+	WebElement AddToCart;
+	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
+	List<WebElement> CartCount;
+	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[2]/span")
+	WebElement Checkout;
+	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[2]/span")
+	List<WebElement> CostCheckout;
+
+	// login page
+	@FindBy(xpath = "//input[@class='for_mob']")
+	WebElement Placeholder;
+	@FindBy(xpath = "//input[@placeholder='10 digit mobile number']")
+	WebElement MobNumber;
+	@FindBy(xpath = "//button[@class='btm_pas']")
+	WebElement SubmitButton;
+	@FindBy(xpath = "//input[@name='otp']")
+	WebElement OTP;
+
+	// CartPage
+	@FindBy(xpath = "//span[@class='change_prdt']")
+	WebElement ChangProduct;
+	@FindBy(xpath = "//button[@class='done_btn']")
+	WebElement Done;
+	@FindBy(xpath = "//span[@class='remove_prdt']")
+	WebElement Remove;
+	@FindBy(xpath = "//button[@class='no_btn']")
+	WebElement RemoveNo;
+
+	// SchedulePage
+	@FindBy(xpath = "//*[@id]/div/div/div/div[5]/div[2]/div[2]/span")
+	WebElement CheckoutOnSchedulePage;
+	@FindBy(xpath = "//span[@class='change_address']")
+	WebElement ChangAddress;
+	@FindBy(xpath = "//i[@class='fa fa-angle-left']")
+	WebElement Back;
+	@FindBy(xpath = "(//div[@class='address_card'])[4]")
+	WebElement Noida18;
+	@FindBy(xpath = "//span[@class='btn_section']")
+	WebElement Proceed;
+	@FindBy(xpath = "//button[@class='yes_btn']")
+	WebElement POPUP;
+	@FindBy(xpath = "//span[@class='slot_note']")
+	WebElement SlotNoteAtBottom;
+	@FindBy(xpath = "//div[@class='address_sec']")
+	WebElement SavedAddress;
+	@FindBy(xpath = "/div[@class='date_section'] ")
+	List<WebElement> AvailableDate;
+	@FindBy(xpath = "(//div[@class='slots_flex'])[1]")
+	List<WebElement> TimeSlotsList;
+	@FindBy(xpath = "(//div[@class='slots_flex'])[2]")
+	List<WebElement> NormalSlots;
+	@FindBy(xpath = "(//div[@class='slots_flex'])[3]")
+	List<WebElement> PrimeTimeSlotsEve;
+
+	// Location Building name page
+	@FindBy(xpath = "//input[@name='building']")
+	WebElement BuildingName;
+	@FindBy(xpath = "//input[@name='addressName']")
+	WebElement AddressName;
+	@FindBy(xpath = "//button[@class='save_add_btn']")
+	WebElement SaveButton;
+
+	public webMainPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+	public void enterAddressName(String enterUrLocation) throws InterruptedException {
+		LocationSearch.sendKeys(enterUrLocation);
+		Actions act = new Actions(driver);
+		act.sendKeys(Keys.DOWN).perform();
+		act.sendKeys(Keys.ENTER).perform();
+		Thread.sleep(5000);
+
+	}
+
+	public void SetUrLocationButton() {
+		String getheadertext = SetUrLocationButton.getText().trim();
+		SetUrLocationButton.click();
+		assertEquals("SET YOUR LOCATION", getheadertext);
+	}
+
+	public void SalonAtHome() {
+		SalonAtHome.click();
+	}
+
+	public void BestSellersVerify() {
+		BestSellers.click();
+
+	}
+
+	// public void AddToCartButtonVerify() {
+	// AddToCart.click();
+	public void AddToCartButtonVerify() throws InterruptedException {
+		List<WebElement> element = CartCount;
+		for (WebElement web : element) {
+			String addToCartCount = web.getText();
+			int length = addToCartCount.length();
+			String Count = addToCartCount.substring(1, length);
+			System.out.println("Amount : " + Count);
+			Thread.sleep(1000);
+		}
+	}
+
+	public void AddToCartButtonClicked() {
+		AddToCart.click();
+	}
+
+	public void CheckoutButtonVerify() {
+		Checkout.click();
+	}
+
+	public void CostOnServicePage() throws InterruptedException {
+		List<WebElement> element = CostCheckout;
+		for (WebElement web : element) {
+			String amount = web.getText();
+			int length = amount.length();
+			String price = amount.substring(1, length);
+			System.out.println("Amount : " + price);
+			Thread.sleep(1000);
+		}
+	}
+
+	public void enterMobileNumber(String MobileNumber) throws InterruptedException {
+		Placeholder.sendKeys(MobileNumber);
+		((HidesKeyboard) driver).hideKeyboard();
+	}
+
+	// private void ClickOnSubmitButton(String submitButton) {
+	public void ClickOnSubmitButton() {
+		SubmitButton.click();
+	}
+
+	public void enterOTP(String otp) {
+		// driver.findElement(OTP).sendKeys(otp);
+		OTP.sendKeys(otp);
+	}
+
+	public void ChangeButtonVerify() {
+		ChangProduct.click();
+	}
+
+	public void DoneButtonVerify() {
+		Done.click();
+	}
+
+	public void RemoveButtonVerify() {
+		Remove.click();
+	}
+
+	public void RemoveButtonNoVerify() {
+		RemoveNo.click();
+	}
+
+	public void CheckoutOnSchedulePageVerify() {
+		CheckoutOnSchedulePage.click();
+	}
+
+	public void BuildingName(String ValidAddressName) {
+		BuildingName.sendKeys("ValidAddressName");
+		((HidesKeyboard) driver).hideKeyboard();
+	}
+
+	public void Address(String ValidAddress) {
+		AddressName.sendKeys("ValidAddress");
+		((HidesKeyboard) driver).hideKeyboard();
+	}
+
+	public void SaveButtonVerify() {
+		SaveButton.click();
+
+	}
+
+	public void ChangeAddressVerify() {
+		ChangAddress.click();
+
+	}
+
+	public void BackArrowVerify() {
+		// driver.findElement(Back).click();
+		Back.click();
+
+	}
+
+	public void PopUpVerify() {
+		POPUP.click();
+	}
+
+	public void ChangeAddressToNoida18Verify() {
+		Noida18.click();
+
+	}
+
+	public void ProceedButtonVerify() {
+		Proceed.click();
+
+	}
+
+	public void SlotNoteAtButtonVerify() {
+		System.out.println(SlotNoteAtBottom.getText());
+
+	}
+
+	public void SavedAddressVerify() {
+		System.out.println(SavedAddress.getText());
+
+	}
+
+//public void AvailableDateVerify() {
+//	System.out.println(driver.findElement(AvailableDate).getText());
+//
+//}
+
+	public void lostOfAllSlotsDate() {
+		List<WebElement> allDates = AvailableDate;
+		System.out.println(allDates.size());
+
+		for (WebElement lostOfAllSlotsDate : allDates) {
+			String date = lostOfAllSlotsDate.getText();
+			System.out.println(date);
+		}
+
+	}
+
+//public void PrimeTimeSlotsMorVerify() {
+//	System.out.println(driver.findElement(PrimeTimeSlotsMor).getText());
+//
+//}
+
+	public void lostOfAllPrimeTimeSlotsMorVerify() {
+		List<WebElement> allSlotsTime = TimeSlotsList;
+		System.out.println(allSlotsTime.size());
+
+		for (WebElement lostOfAllSlotsDate : allSlotsTime) {
+			String time = lostOfAllSlotsDate.getText();
+			System.out.println(time);
+		}
+
+	}
+
+//public void NormalSlotsVerify() {
+//	System.out.println(driver.findElement(NormalSlots).getText());
+//
+//}
+
+	public void lostOfAllNormalSlotsVerify() {
+		List<WebElement> allNormalSlotsTime = NormalSlots;
+		System.out.println(allNormalSlotsTime.size());
+
+		for (WebElement lostOfAllSlotsDate : allNormalSlotsTime) {
+			String time = lostOfAllSlotsDate.getText();
+			System.out.println(time);
+		}
+
+	}
+
+//public void PrimeTimeSlotsEveVerify() {
+//	System.out.println(driver.findElement(PrimeTimeSlotsEve).getText());
+//
+//}
+
+	public void lostOfAllPrimeTimeSlotsEveVerify() {
+		List<WebElement> allPrimeEveSlotsTime = PrimeTimeSlotsEve;
+		System.out.println(allPrimeEveSlotsTime.size());
+
+		for (WebElement lostOfAllSlotsDate : allPrimeEveSlotsTime) {
+			String time = lostOfAllSlotsDate.getText();
+			System.out.println(time);
+		}
+
+	}
+}
