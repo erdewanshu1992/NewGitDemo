@@ -5,14 +5,9 @@
     <classes>
       <class name="sample.WebMainPageTC">
         <methods>
-          <include name="lostOfAllPrimeTimeSlotsEveVerify"/>
-          <include name="lostOfAllNormalSlotsVerify"/>
-          <include name="ProceedButtonVerify"/>
+          <include name="BackArrowVerify"/>
           <include name="webBrowserlaunch"/>
-          <include name="lostOfAllSlotsDate"/>
-          <include name="lostOfAllPrimeTimeSlotsMorVerify"/>
-          <include name="PopUpVerify"/>
-          <include name="SavedAddressVerify"/>
+          <include name="ChangeAddressVerify"/>
         </methods>
       </class> <!-- sample.WebMainPageTC -->
     </classes>
