@@ -15,7 +15,7 @@ import io.appium.java_client.HidesKeyboard;
 
 public class webMainPage extends AndroidChromeTest {
 	
-	WebDriver driver; //Good Morning
+	WebDriver driver;
 
 	// Main Page
 	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
@@ -30,6 +30,7 @@ public class webMainPage extends AndroidChromeTest {
 	WebElement BestSellers;
 	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
 	WebElement AddToCart;
+	@FindBy(xpath="(//span[@class='plus'])[1]")WebElement PlusButton;
 	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
 	List<WebElement> CartCount;
 	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[2]/span")
@@ -133,9 +134,47 @@ public class webMainPage extends AndroidChromeTest {
 		}
 	}
 
-	public void AddToCartButtonClicked() {
+	public void PlusButtonVerify() {
+		
+//		 int count = 1;
+//	        while (count <=5) {
+//				PlusButton.click();
+//	            System.out.println("Count is: " + count);
+//	            count++;
+//	        }
+//	    }
+		
+		//The following are two exception handlers for the writeList method:
+//		try {
+//
+//		} catch (IndexOutOfBoundsException e) {
+//		    System.err.println("IndexOutOfBoundsException: " + e.getMessage());
+//		} catch (IOException e) {
+//		    System.err.println("Caught IOException: " + e.getMessage());
+//		}
+//		catch (IOException|SQLException ex) {
+//		    logger.log(ex);
+//		    throw ex;
+//		}
+		
+		
+		int i = 0;
+		while (i <= 5) {
+			try {
+				PlusButton.click();
+                System.out.println("Count is: " + i);
+
+			} catch(Exception e){
+				e.printStackTrace();
+			}
+			i++;
+			
+		}
+	}
+	public void AddToCartButtonClicked () {
 		AddToCart.click();
 	}
+
 
 	public void CheckoutButtonVerify() {
 		Checkout.click();

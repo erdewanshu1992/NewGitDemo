@@ -5,29 +5,12 @@
     <classes>
       <class name="sample.WebMainPageTC">
         <methods>
-          <include name="BackArrowVerify"/>
           <include name="AddToCartButtonClicked"/>
           <include name="navigate_to_homepage_click_on_SetUrLocation"/>
-          <include name="enterOTP"/>
-          <include name="ClickOnSubmitButton"/>
-          <include name="ProceedButtonVerify"/>
-          <include name="BuildingName"/>
-          <include name="CheckoutButtonVerify"/>
-          <include name="SlotNoteAtButtonVerify"/>
-          <include name="CheckoutOnSchedulePageVerify"/>
-          <include name="Address"/>
-          <include name="PopUpVerify"/>
-          <include name="ChangeAddressVerify"/>
-          <include name="BestSellersVerify"/>
-          <include name="SaveButtonVerify"/>
-          <include name="SavedAddressVerify"/>
-          <include name="ChangeButtonVerify"/>
-          <include name="DoneButtonVerify"/>
           <include name="enter_userAddress"/>
-          <include name="RemoveButtonVerify"/>
           <include name="webBrowserlaunch"/>
-          <include name="RemoveButtonNoVerify"/>
-          <include name="enterMobileNumber"/>
+          <include name="PlusButtonVerify"/>
+          <include name="BestSellersVerify"/>
           <include name="MainCatSalonAtHome"/>
         </methods>
       </class> <!-- sample.WebMainPageTC -->

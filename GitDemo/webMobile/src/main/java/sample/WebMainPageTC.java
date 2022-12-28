@@ -36,8 +36,21 @@ public class WebMainPageTC extends AndroidChromeTest {
 		webMainPage.AddToCartButtonClicked();
 
 	}
-
+	
+	
 	@Test(dependsOnMethods = { "AddToCartButtonClicked" })
+	public void PlusButtonVerify() {
+		webMainPage webMainPage = new webMainPage(driver);
+		webMainPage.PlusButtonVerify();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+	}
+/*
+	@Test(dependsOnMethods = { "PlusButtonVerify" })
 	public void CheckoutButtonVerify() {
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.CheckoutButtonVerify();
@@ -178,5 +191,6 @@ public class WebMainPageTC extends AndroidChromeTest {
 		webMainPage.PopUpVerify();
 		Thread.sleep(5000);
 	}
+	*/
 
 }
