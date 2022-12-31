@@ -5,11 +5,8 @@
     <classes>
       <class name="sample.mainPageTC">
         <methods>
-          <include name="enter_userAddress"/>
-          <include name="scrollUp"/>
           <include name="webBrowserlaunch"/>
-          <include name="navigate_to_SetUrLocation"/>
-          <include name="scrollDown"/>
+          <include name="SalonAtHome"/>
         </methods>
       </class> <!-- sample.mainPageTC -->
     </classes>
