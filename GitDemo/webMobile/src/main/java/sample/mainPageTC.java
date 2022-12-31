@@ -18,24 +18,42 @@ public class mainPageTC extends AndroidChromeTest {
 		}
 
 		@Test(priority = 2)
-		public void scrollDown() throws InterruptedException {
+		public void scrollDown() {
 			mainPage mainPage = new mainPage(driver);
 			mainPage.scrollDown(driver);
 
 		}
 
 		@Test(priority = 3)
-		public void scrollUp() throws InterruptedException {
+		public void scrollUp() {
 			mainPage mainPage = new mainPage(driver);
 			mainPage.scrollUp(driver);
 
 		}
 
 		@Test(priority = 4)
-		public void lostOfAllMainCats() throws InterruptedException {
+		public void lostOfAllMainCats() {
 			mainPage mainPage = new mainPage(driver);
 			mainPage.lostOfAllMainCats();
 
 		}
+
+		@Test(priority = 5)
+		public void SalonAtHome() {
+			mainPage mainPage = new mainPage(driver);
+			mainPage.SalonAtHome();
 	}
 
+	@Test(priority = 6)
+	public void BesSellerClick() {
+		mainPage mainPage = new mainPage(driver);
+		mainPage.ClickBesSellers();
+	}
+
+	@Test(priority = 7)
+		public void CircleSubCats() {
+			mainPage mainPage = new mainPage(driver);
+			mainPage.CircleSubCats();
+		
+}
+}

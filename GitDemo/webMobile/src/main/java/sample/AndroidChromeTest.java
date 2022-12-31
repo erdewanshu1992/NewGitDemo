@@ -27,8 +27,8 @@ public class AndroidChromeTest {
 		//driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);//Asus setup
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);//yesmadam setup
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		 driver.get("http://api-stage-aws.yesmadam.co.in/");
-		// driver.get("https://www.yesmadam.com/");
+		// driver.get("http://api-stage-aws.yesmadam.co.in/");
+		driver.get("https://www.yesmadam.com/");
 		//String url = "https://www.yesmadam.com/";
 		//driver.get(url);
 		String actual = driver.getTitle();

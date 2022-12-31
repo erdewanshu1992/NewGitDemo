@@ -22,6 +22,15 @@ public class mainPage {
 	// Home Page Element
 	@FindBy(xpath = "//div[@class='cat_card']")
 	List<WebElement> MainCats;
+	@FindBy(xpath = "(//div[@class='cat_card'])[1]")
+	WebElement SalonAtHome;
+//	@FindBy(xpath = "//div[@class='cat_card']")
+//	List<WebElement> AllCats;
+	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[3]/span[2]/a[1]/div/img")
+	WebElement BestSeller;
+	@FindBy(xpath = "//a[@class='subcat_anchor']")
+	List<WebElement> CircleSubCats;
+
 
 	public mainPage(WebDriver driver) {
 		this.driver = driver;
@@ -81,9 +90,42 @@ public class mainPage {
 		System.out.println(allCats.size());
 
 		for (WebElement lostOfAllMainCats : allCats) {
-			String CatLista = lostOfAllMainCats.getText();
-			System.out.println(CatLista);
+			String CatLists = lostOfAllMainCats.getText();
+			System.out.println(CatLists);
 		}
+
+	}
+	
+	public void SalonAtHome() {
+		SalonAtHome.click();
+
+	}
+
+//	public void lostOfAllCat() {
+//		List<WebElement> allCats = AllCats;
+//		System.out.println(allCats.size());
+//
+//		for (WebElement lostOfAllCat : allCats) {
+//			String CatLists = lostOfAllCat.getText();
+//			System.out.println(CatLists);
+//		}
+
+	public void ClickBesSellers() {
+		BestSeller.click();
+	}
+
+	public void CircleSubCats() {
+		List<WebElement> allCats = CircleSubCats;
+		System.out.println(allCats.size());
+
+		for (WebElement CircleSubCats : allCats) {
+			String CircleSubCat = CircleSubCats.getText();
+			System.out.println(CircleSubCat);
+	}
+//	public void ClickBesSellers() {
+//		BestSeller.click();
+//
+//	}
 
 	}
 }
