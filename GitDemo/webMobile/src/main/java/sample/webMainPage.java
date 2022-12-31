@@ -13,8 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.HidesKeyboard;
 
-public class webMainPage extends AndroidChromeTest {
-	
+public class webMainPage {
+//extends AndroidChromeTest
 	WebDriver driver;
 
 	// Main Page
@@ -23,20 +23,35 @@ public class webMainPage extends AndroidChromeTest {
 	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
 	WebElement LocationSearch;
 
-	// MainCatSalonAtHome
+	// MainCatSalonAtHome"(//*[starts-with(@id, 'btn-')])[1]")
 	@FindBy(xpath = "(//div[@class='cat_card'])[1]")
 	WebElement SalonAtHome;
 	@FindBy(xpath = "(//div[@class='subcat_img'])[1]")
 	WebElement BestSellers;
-	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
+//	@FindBy(xpath = "(//*[starts-with(@id, 'btn-')])[1]")
+//	WebElement AddToCart;
+	@FindBy(xpath = "//*[@id=\"prdt_sec\"]/div[1]/div[1]/div[2]/span[3]")
 	WebElement AddToCart;
-	@FindBy(xpath="(//span[@class='plus'])[1]")WebElement PlusButton;
+	@FindBy(xpath = "(//span[@class='price'])[1]")
+	WebElement ServicePrice;
+	@FindBy(xpath = "(//span[@class='plus'])[1]")
+	WebElement PlusButton;
 	@FindBy(xpath = "(//span[@class='addtocart'])[1]")
-	List<WebElement> CartCount;
+	WebElement CartCount;
 	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[2]/span")
 	WebElement Checkout;
 	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[2]/span")
 	List<WebElement> CostCheckout;
+	@FindBy(xpath = "(//span[@class='total_Cost'])[1]/b")
+	WebElement Text;
+	@FindBy(xpath = "(//span[@class='total_time'])[1]")
+	WebElement ServiceTime;
+	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[5]/div[1]/span[1]/b")
+	WebElement TotalCost;
+	@FindBy(xpath = "(//span[@class='total_time'])[34]")
+	WebElement TotalTime;
+	@FindBy(xpath = "//span[@class='item_incart']")
+	WebElement TotalItems;
 
 	// login page
 	@FindBy(xpath = "//input[@class='for_mob']")
@@ -121,60 +136,60 @@ public class webMainPage extends AndroidChromeTest {
 
 	}
 
-	// public void AddToCartButtonVerify() {
-	// AddToCart.click();
-	public void AddToCartButtonVerify() throws InterruptedException {
-		List<WebElement> element = CartCount;
-		for (WebElement web : element) {
-			String addToCartCount = web.getText();
-			int length = addToCartCount.length();
-			String Count = addToCartCount.substring(1, length);
-			System.out.println("Amount : " + Count);
-			Thread.sleep(1000);
-		}
+	public void TotalCostVerify() {
+		System.out.println(Text.getText());
+		// System.out.println(Text.getText().split("^[0-9]", '₹'));
+		Text.click();
+
+	}
+
+	public void ServiceTimeVerify() {
+		System.out.println(ServiceTime.getText());
+		// System.out.println(Text.getText().split("^[0-9]", '₹'));
+		ServiceTime.click();
+	}
+
+	public void TotalTimeVerify() {
+		System.out.println(TotalTime.getText());
+		// System.out.println(Text.getText().split("^[0-9]", '₹'));
+		TotalTime.click();
+	}
+
+	public void TotalItemsVerify() {
+		System.out.println(TotalItems.getText());
+		TotalItems.click();
 	}
 
 	public void PlusButtonVerify() {
-		
-//		 int count = 1;
-//	        while (count <=5) {
-//				PlusButton.click();
-//	            System.out.println("Count is: " + count);
-//	            count++;
-//	        }
-//	    }
-		
-		//The following are two exception handlers for the writeList method:
-//		try {
-//
-//		} catch (IndexOutOfBoundsException e) {
-//		    System.err.println("IndexOutOfBoundsException: " + e.getMessage());
-//		} catch (IOException e) {
-//		    System.err.println("Caught IOException: " + e.getMessage());
-//		}
-//		catch (IOException|SQLException ex) {
-//		    logger.log(ex);
-//		    throw ex;
-//		}
-		
-		
-		int i = 0;
-		while (i <= 5) {
-			try {
-				PlusButton.click();
-                System.out.println("Count is: " + i);
+		for (int i = 0; i < 2; i++) {
 
-			} catch(Exception e){
-				e.printStackTrace();
-			}
-			i++;
-			
+//		int i = 0;
+//		while (i < 2) {
+//			try {
+			PlusButton.click();
+//
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		i++;
+//
 		}
 	}
-	public void AddToCartButtonClicked () {
+
+	public void AddToCartButtonClicked() {
+		// System.out.println(AddToCart.getAttribute("id").split("-")[1]);
+		System.out.println(AddToCart.getCssValue("class"));
 		AddToCart.click();
 	}
 
+	public void ServicePriceVerify() {
+		System.out.println(ServicePrice.getText());
+		ServicePrice.click();
+	}
+
+	public void PriceText() {
+		Text.getText();
+	}
 
 	public void CheckoutButtonVerify() {
 		Checkout.click();
@@ -196,13 +211,11 @@ public class webMainPage extends AndroidChromeTest {
 		((HidesKeyboard) driver).hideKeyboard();
 	}
 
-	// private void ClickOnSubmitButton(String submitButton) {
 	public void ClickOnSubmitButton() {
 		SubmitButton.click();
 	}
 
 	public void enterOTP(String otp) {
-		// driver.findElement(OTP).sendKeys(otp);
 		OTP.sendKeys(otp);
 	}
 
@@ -247,7 +260,6 @@ public class webMainPage extends AndroidChromeTest {
 	}
 
 	public void BackArrowVerify() {
-		// driver.findElement(Back).click();
 		Back.click();
 
 	}
@@ -276,11 +288,6 @@ public class webMainPage extends AndroidChromeTest {
 
 	}
 
-//public void AvailableDateVerify() {
-//	System.out.println(driver.findElement(AvailableDate).getText());
-//
-//}
-
 	public void lostOfAllSlotsDate() {
 		List<WebElement> allDates = AvailableDate;
 		System.out.println(allDates.size());
@@ -291,11 +298,6 @@ public class webMainPage extends AndroidChromeTest {
 		}
 
 	}
-
-//public void PrimeTimeSlotsMorVerify() {
-//	System.out.println(driver.findElement(PrimeTimeSlotsMor).getText());
-//
-//}
 
 	public void lostOfAllPrimeTimeSlotsMorVerify() {
 		List<WebElement> allSlotsTime = TimeSlotsList;
@@ -308,11 +310,6 @@ public class webMainPage extends AndroidChromeTest {
 
 	}
 
-//public void NormalSlotsVerify() {
-//	System.out.println(driver.findElement(NormalSlots).getText());
-//
-//}
-
 	public void lostOfAllNormalSlotsVerify() {
 		List<WebElement> allNormalSlotsTime = NormalSlots;
 		System.out.println(allNormalSlotsTime.size());
@@ -323,11 +320,6 @@ public class webMainPage extends AndroidChromeTest {
 		}
 
 	}
-
-//public void PrimeTimeSlotsEveVerify() {
-//	System.out.println(driver.findElement(PrimeTimeSlotsEve).getText());
-//
-//}
 
 	public void lostOfAllPrimeTimeSlotsEveVerify() {
 		List<WebElement> allPrimeEveSlotsTime = PrimeTimeSlotsEve;
@@ -340,3 +332,48 @@ public class webMainPage extends AndroidChromeTest {
 	}
 
 }
+
+//	public void TotalItemsVerify() {
+//		System.out.println(TotalItems.getText());
+//		TotalItems.click();		
+//	}
+//}
+
+//ignore below
+
+//public void PrimeTimeSlotsEveVerify() {
+//	System.out.println(driver.findElement(PrimeTimeSlotsEve).getText());
+//
+//}
+
+//public void NormalSlotsVerify() {
+//	System.out.println(driver.findElement(NormalSlots).getText());
+//
+//}
+
+//int count = 1;
+//while (count <=5) {
+//	PlusButton.click();
+//    System.out.println("Count is: " + count);
+//    count++;
+//}
+//}
+
+//The following are two exception handlers for the writeList method:
+//try {
+//
+//} catch (IndexOutOfBoundsException e) {
+//System.err.println("IndexOutOfBoundsException: " + e.getMessage());
+//} catch (IOException e) {
+//System.err.println("Caught IOException: " + e.getMessage());
+//}
+//catch (IOException|SQLException ex) {
+//logger.log(ex);
+//throw ex;
+//}
+
+//public void AddToCartButtonClicked() {
+//	System.out.println(AddToCart.getAttribute("id").split("-")[1]);
+//	for(int i = 0; i < 2; i++) {
+//		AddToCart.click();
+//	}

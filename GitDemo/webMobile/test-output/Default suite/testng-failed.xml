@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample.WebMainPageTC">
+      <class name="sample.mainPageTC">
         <methods>
-          <include name="AddToCartButtonClicked"/>
-          <include name="navigate_to_homepage_click_on_SetUrLocation"/>
           <include name="enter_userAddress"/>
+          <include name="scrollUp"/>
           <include name="webBrowserlaunch"/>
-          <include name="PlusButtonVerify"/>
-          <include name="BestSellersVerify"/>
-          <include name="MainCatSalonAtHome"/>
+          <include name="navigate_to_SetUrLocation"/>
+          <include name="scrollDown"/>
         </methods>
-      </class> <!-- sample.WebMainPageTC -->
+      </class> <!-- sample.mainPageTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

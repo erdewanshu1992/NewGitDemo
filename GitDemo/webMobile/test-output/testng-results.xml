@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T19:23:10 IST" name="Default suite" finished-at="2022-12-28T19:24:19 IST" duration-ms="68809">
+  <suite started-at="2022-12-31T17:12:04 IST" name="Default suite" finished-at="2022-12-31T17:12:54 IST" duration-ms="49531">
     <groups>
     </groups>
-    <test started-at="2022-12-28T19:23:10 IST" name="Default test" finished-at="2022-12-28T19:24:19 IST" duration-ms="68809">
-      <class name="sample.WebMainPageTC">
-        <test-method is-config="true" signature="webBrowserlaunch()[pri:0, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:23:10 IST" name="webBrowserlaunch" finished-at="2022-12-28T19:23:34 IST" duration-ms="23983" status="PASS">
+    <test started-at="2022-12-31T17:12:04 IST" name="Default test" finished-at="2022-12-31T17:12:54 IST" duration-ms="49531">
+      <class name="sample.mainPageTC">
+        <test-method is-config="true" signature="webBrowserlaunch()[pri:0, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:04 IST" name="webBrowserlaunch" finished-at="2022-12-31T17:12:32 IST" duration-ms="27610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webBrowserlaunch -->
-        <test-method signature="navigate_to_homepage_click_on_SetUrLocation()[pri:0, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:23:34 IST" name="navigate_to_homepage_click_on_SetUrLocation" finished-at="2022-12-28T19:23:35 IST" duration-ms="1071" status="PASS">
+        <test-method signature="navigate_to_SetUrLocation()[pri:0, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:32 IST" name="navigate_to_SetUrLocation" finished-at="2022-12-31T17:12:33 IST" duration-ms="587" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_homepage_click_on_SetUrLocation -->
-        <test-method signature="enter_userAddress()[pri:0, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:23:35 IST" name="enter_userAddress" finished-at="2022-12-28T19:23:43 IST" depends-on-methods="sample.WebMainPageTC.navigate_to_homepage_click_on_SetUrLocation" duration-ms="8215" status="PASS">
+        </test-method> <!-- navigate_to_SetUrLocation -->
+        <test-method signature="enter_userAddress()[pri:0, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:33 IST" name="enter_userAddress" finished-at="2022-12-31T17:12:40 IST" depends-on-methods="sample.mainPageTC.navigate_to_SetUrLocation" duration-ms="7848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_userAddress -->
-        <test-method signature="MainCatSalonAtHome()[pri:2, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:23:43 IST" name="MainCatSalonAtHome" finished-at="2022-12-28T19:24:02 IST" duration-ms="18842" status="PASS">
+        <test-method signature="scrollDown()[pri:2, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:40 IST" name="scrollDown" finished-at="2022-12-31T17:12:47 IST" duration-ms="6565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MainCatSalonAtHome -->
-        <test-method signature="BestSellersVerify()[pri:3, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:24:02 IST" name="BestSellersVerify" finished-at="2022-12-28T19:24:08 IST" duration-ms="5966" status="PASS">
+        </test-method> <!-- scrollDown -->
+        <test-method signature="scrollUp()[pri:3, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:47 IST" name="scrollUp" finished-at="2022-12-31T17:12:53 IST" duration-ms="6153" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BestSellersVerify -->
-        <test-method signature="AddToCartButtonClicked()[pri:0, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:24:08 IST" name="AddToCartButtonClicked" finished-at="2022-12-28T19:24:10 IST" depends-on-methods="sample.WebMainPageTC.BestSellersVerify" duration-ms="1945" status="PASS">
+        </test-method> <!-- scrollUp -->
+        <test-method signature="lostOfAllMainCats()[pri:4, instance:sample.mainPageTC@6340e5f0]" started-at="2022-12-31T17:12:53 IST" name="lostOfAllMainCats" finished-at="2022-12-31T17:12:54 IST" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddToCartButtonClicked -->
-        <test-method signature="PlusButtonVerify()[pri:0, instance:sample.WebMainPageTC@45099dd3]" started-at="2022-12-28T19:24:10 IST" name="PlusButtonVerify" finished-at="2022-12-28T19:24:19 IST" depends-on-methods="sample.WebMainPageTC.AddToCartButtonClicked" duration-ms="8700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlusButtonVerify -->
-      </class> <!-- sample.WebMainPageTC -->
+        </test-method> <!-- lostOfAllMainCats -->
+      </class> <!-- sample.mainPageTC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
