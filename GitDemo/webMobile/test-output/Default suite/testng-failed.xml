@@ -6,7 +6,7 @@
       <class name="sample.mainPageTC">
         <methods>
           <include name="webBrowserlaunch"/>
-          <include name="SalonAtHome"/>
+          <include name="lostOfAllMainCats"/>
         </methods>
       </class> <!-- sample.mainPageTC -->
     </classes>

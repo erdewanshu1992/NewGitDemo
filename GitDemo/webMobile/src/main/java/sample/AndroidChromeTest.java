@@ -17,8 +17,8 @@ public class AndroidChromeTest {
 	public void webBrowserlaunch() throws InterruptedException, MalformedURLException {
 
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("vivo");
-		//options.setDeviceName("samsung");
+		//options.setDeviceName("vivo");
+		options.setDeviceName("samsung");
 		//options.setDeviceName("x8rwh6skrolrjvdy");//Redmi Note 10T 5G
 		//options.setDeviceName("Redmi Note 10T 5G");//Redmi Note 10T 5G
 		options.setChromedriverExecutable("/home/yesmadam/Desktop/Drivers/chromedriver");//yesmadam setup

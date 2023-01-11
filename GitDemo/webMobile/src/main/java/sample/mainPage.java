@@ -2,10 +2,8 @@ package sample;
 
 import java.util.List;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -31,7 +29,6 @@ public class mainPage {
 	@FindBy(xpath = "//a[@class='subcat_anchor']")
 	List<WebElement> CircleSubCats;
 
-
 	public mainPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -52,50 +49,19 @@ public class mainPage {
 
 	}
 
-	public void scrollDown(WebDriver driver) {
-		try {
-			int i = 0;
-			for (; i <= 100; i++) {
-				((JavascriptExecutor) driver).executeScript(("window.scrollBy(0," + i + ")"), "");
-			}
-			for (; i > 0; i--) {
-				((JavascriptExecutor) driver).executeScript(("window.scrollBy(0," + i + ")"), "");
-			}
-		} catch (WebDriverException wde) {
-		} catch (Exception e) {
-		}
-	}
-
-	/**
-	 * scrollUp() method scrolls up the page.
-	 *
-	 * @return void
-	 */
-	public void scrollUp(WebDriver driver) {
-		try {
-			int i = 0;
-			for (; i > -100; i--) {
-				((JavascriptExecutor) driver).executeScript(("window.scrollBy(0," + i + ")"), "");
-			}
-			for (; i < 0; i++) {
-				((JavascriptExecutor) driver).executeScript(("window.scrollBy(0," + i + ")"), "");
-			}
-		} catch (WebDriverException wde) {
-		} catch (Exception e) {
-		}
-	}
-
 	public void lostOfAllMainCats() {
 		List<WebElement> allCats = MainCats;
 		System.out.println(allCats.size());
 
 		for (WebElement lostOfAllMainCats : allCats) {
 			String CatLists = lostOfAllMainCats.getText();
+			CatLists = CatLists.replaceAll("\\n", " ");
 			System.out.println(CatLists);
+
 		}
 
 	}
-	
+
 	public void SalonAtHome() {
 		SalonAtHome.click();
 
@@ -120,12 +86,10 @@ public class mainPage {
 
 		for (WebElement CircleSubCats : allCats) {
 			String CircleSubCat = CircleSubCats.getText();
+			CircleSubCat.replaceAll("\\n", " ");
 			System.out.println(CircleSubCat);
-	}
-//	public void ClickBesSellers() {
-//		BestSeller.click();
-//
-//	}
+
+		}
 
 	}
 }
