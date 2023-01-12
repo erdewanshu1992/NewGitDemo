@@ -1,4 +1,4 @@
-package sample;
+package webSitePages;
 
 import org.testng.annotations.Test;
 

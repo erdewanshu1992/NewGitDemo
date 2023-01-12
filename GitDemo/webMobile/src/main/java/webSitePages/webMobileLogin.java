@@ -1,4 +1,4 @@
-package webSite;
+package webSitePages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +11,8 @@ public class webMobileLogin {
 	// Main Page Elements
 	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
 	WebElement SetUrLocationButton;
-	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
-	WebElement LocationSearch;
+//	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
+//	WebElement LocationSearch;
 	
 	public webMobileLogin(WebDriver driver) {
 		this.driver = driver;

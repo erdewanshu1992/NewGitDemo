@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample.mainPageTC">
+      <class name="TestCases.TestCases">
         <methods>
           <include name="webBrowserlaunch"/>
-          <include name="lostOfAllMainCats"/>
+          <include name="AddToCartButtonClicked"/>
+          <include name="TotalCostVerify"/>
+          <include name="TotalTimeVerify"/>
+          <include name="PlusButtonVerify"/>
+          <include name="AddToCartButtonClicked2"/>
         </methods>
-      </class> <!-- sample.mainPageTC -->
+      </class> <!-- TestCases.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

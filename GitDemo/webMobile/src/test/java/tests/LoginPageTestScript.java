@@ -15,7 +15,7 @@ public class LoginPageTestScript {
 	
 	@BeforeTest
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");
 		driver = new ChromeDriver();
 		//driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		driver.get("https://demo.guru99.com/test/newtours/");
