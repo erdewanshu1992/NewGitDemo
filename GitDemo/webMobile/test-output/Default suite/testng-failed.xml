@@ -6,13 +6,8 @@
       <class name="TestCases.TestCases">
         <methods>
           <include name="webBrowserlaunch"/>
-          <include name="HomeScreenVerify"/>
           <include name="AllAddToCartButtonClickedVerify"/>
-          <include name="enter_userAddress"/>
-          <include name="SubCatsVerify"/>
           <include name="CircleSubCatsVerify"/>
-          <include name="HomeScreenMainCatVerify"/>
-          <include name="navigate_to_SetUrLocation"/>
         </methods>
       </class> <!-- TestCases.TestCases -->
     </classes>
