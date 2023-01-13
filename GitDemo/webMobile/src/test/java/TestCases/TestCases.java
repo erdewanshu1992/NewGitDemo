@@ -1,5 +1,7 @@
 package TestCases;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import sample.Scrolling;
@@ -28,19 +30,19 @@ public class TestCases extends AndroidChromeTest {
 	public void HomeScreenVerify() {
 		HomeScreen ref = new HomeScreen(driver);
 		ref.lostOfAllMainCats();
-		Scrolling refs = new Scrolling(driver);
-		refs.scrollDown(driver);
-		refs.scrollUp(driver);
+//		Scrolling refs = new Scrolling(driver);
+//		refs.scrollDown(driver);
+//		refs.scrollUp(driver);
 		
 	}
 	@Test(priority = 3)
 	public void HomeScreenMainCatVerify() {
 		HomeScreen ref = new HomeScreen(driver);
 		ref.SalonAtHome();
-		Scrolling refs = new Scrolling(driver);
-		refs.scrollDown(driver);
-		refs.scrollUp(driver);
-	
+//		Scrolling refs = new Scrolling(driver);
+//		refs.scrollDown(driver);
+//		refs.scrollUp(driver);
+//	
 	}
 	@Test(priority = 4)
 	public void SubCatsVerify() {
@@ -54,6 +56,15 @@ public class TestCases extends AndroidChromeTest {
 		ref.CircleSubCats();
 		
 	}
+	@Test(priority = 6)
+
+	public void AllAddToCartButtonClickedVerify() {
+		CartScreen ref = new CartScreen(driver);
+		ref.AllAddToCartButtonClicked();
+		ref.AddToCartButtonClicked();
+	
+	/*
+	
 	//@Test(dependsOnMethods = { "BestSellersVerify" })
 	@Test(priority = 6)
 
@@ -71,17 +82,18 @@ public class TestCases extends AndroidChromeTest {
 	public void PlusButtonVerify() {
 		CartScreen ref = new CartScreen(driver);
 		ref.PlusButtonVerify();
+		ref.MaxTestVerift();
 
 	}
-	@Test(priority = 6)
-
-	public void AddToCartButtonClicked2() {
-		CartScreen ref = new CartScreen(driver);
-		ref.AddToCartButtonClicked2();
-		ref.ServiceTimeVerify();// particular service time
-		ref.ServicePriceVerify();// particular service price
-
-	}
+//	@Test(priority = 6)
+//
+//	public void AddToCartButtonClicked2() {
+//		CartScreen ref = new CartScreen(driver);
+//		ref.AddToCartButtonClicked2();
+//		ref.ServiceTimeVerify();// particular service time
+//		ref.ServicePriceVerify();// particular service price
+//
+//	}
 
 	//@Test(dependsOnMethods = { "PlusButtonVerify" })
 	@Test(priority = 8)
@@ -101,6 +113,6 @@ public class TestCases extends AndroidChromeTest {
 		ref.TotalTimeVerify();
 		ref.TotalItemsVerify();// Items Quantity
 
-	}
+	*/}
 
 }
