@@ -61,7 +61,6 @@ public class TestCases extends AndroidChromeTest {
 	public void AllAddToCartButtonClickedVerify() {
 		CartScreen ref = new CartScreen(driver);
 		ref.AllAddToCartButtonClicked();
-		ref.AddToCartButtonClicked();
 	
 	/*
 	

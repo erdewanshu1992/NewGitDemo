@@ -49,15 +49,24 @@ public class CartScreen {
 	}
 
 	public void CircleSubCats() {
-		List<WebElement> allCats = CircleSubCats;
-		System.out.println(allCats.size());
+		
+		List<WebElement> myElements = CircleSubCats;
+        System.out.println("Size of List: "+myElements.size());
+        for(WebElement e : myElements) 
+        {        
+            System.out.print("Text within the Anchor tab :" +e.getText()+"\t");
+            System.out.print("Text within the Anchor tab :" +e.getText());
+            System.out.println("Anchor: "+e.getAttribute("href"));
+        }
+		//List<WebElement> allCats = CircleSubCats;
+		//System.out.println(allCats.size());
 
-		for (WebElement CircleSubCats : allCats) {
-			String CircleSubCat = CircleSubCats.getText();
-			CircleSubCat.replaceAll("\\n", " ");
-			System.out.println(CircleSubCat);
-
-		}
+//		for (WebElement CircleSubCats : allCats) {
+//			String CircleSubCat = CircleSubCats.getText();
+//			CircleSubCat.replaceAll("\\n", " ");
+//			System.out.println(CircleSubCat);
+//
+//		}
 
 	}
 

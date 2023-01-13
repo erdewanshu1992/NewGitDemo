@@ -20,14 +20,26 @@ public class HomeScreen {
 	}
 
 	public void lostOfAllMainCats() {
-		List<WebElement> allCats = MainCats;
-		System.out.println(allCats.size());
-
-		for (WebElement lostOfAllMainCats : allCats) {
-			String CatLists = lostOfAllMainCats.getText();
+		List<WebElement> myElements = MainCats;
+        System.out.println("Size of List: "+myElements.size());
+        for(WebElement e : myElements) 
+        {        
+        	String CatLists = e.getText();
 			CatLists = CatLists.replaceAll("\\n", " ");
-			System.out.println(CatLists);
-		}
+            System.out.print("Main Categories Name :" +e.getText()+"\t");
+            //System.out.println(CatLists);
+            
+        }
+	
+		
+//		List<WebElement> allCats = MainCats;
+//		System.out.println(allCats.size());
+//
+//		for (WebElement lostOfAllMainCats : allCats) {
+//			String CatLists = lostOfAllMainCats.getText();
+//			CatLists = CatLists.replaceAll("\\n", " ");
+//			System.out.println(CatLists);
+//		}
 
 	}
 
