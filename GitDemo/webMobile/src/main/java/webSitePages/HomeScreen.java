@@ -26,8 +26,8 @@ public class HomeScreen {
         {        
         	String CatLists = e.getText();
 			CatLists = CatLists.replaceAll("\\n", " ");
-            System.out.print("Main Categories Name :" +e.getText()+"\t");
-            //System.out.println(CatLists);
+            //System.out.print("Main Categories Name :" +e.getText()+"\t");
+            System.out.println("Main Categorie Name :" +CatLists);
             
         }
 	
