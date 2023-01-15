@@ -13,27 +13,49 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 
 public class AndroidChromeTest {
 	protected WebDriver driver;
+
 	@BeforeTest
 	public void webBrowserlaunch() throws InterruptedException, MalformedURLException {
 
 		UiAutomator2Options options = new UiAutomator2Options();
-		//options.setDeviceName("vivo");
-		options.setDeviceName("samsung");
-		//options.setDeviceName("x8rwh6skrolrjvdy");//Redmi Note 10T 5G
-		//options.setDeviceName("Redmi Note 10T 5G");//Redmi Note 10T 5G
-		options.setChromedriverExecutable("/home/yesmadam/Desktop/Drivers/chromedriver");//yesmadam setup
-		//options.setChromedriverExecutable("C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");//Asus setup
+		options.setDeviceName("vivo");
+		// options.setDeviceName("samsung");
+		// options.setDeviceName("x8rwh6skrolrjvdy");//Redmi Note 10T 5G
+		// options.setDeviceName("Redmi Note 10T 5G");//Redmi Note 10T 5G
+		// options.setChromedriverExecutable("/home/yesmadam/Desktop/Drivers/chromedriver");//yesmadam
+		// setup
+		options.setChromedriverExecutable("C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");// Asus setup
 		options.setCapability("browserName", "Chrome");
-		//driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);//Asus setup
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);//yesmadam setup
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);// Asus setup
+		// driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);//yesmadam setup
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		// driver.get("http://api-stage-aws.yesmadam.co.in/");
 		driver.get("https://www.yesmadam.com/");
-		//String url = "https://www.yesmadam.com/";
-		//driver.get(url);
-		String actual = driver.getTitle();
-		String expected = "Yes Madam - Salon at Home | Beauty Parlour Services at Home";
-		Assert.assertEquals(actual, expected);
+		
+		String getCurrentUrl ="https://www.yesmadam.com/";
+		boolean flagUrl = false;
+		    if (driver.getCurrentUrl().equalsIgnoreCase(getCurrentUrl)) {
+			flagUrl = true;
+			System.out.println("Yeah dewanshu... This is Live env good luck :-) ");
+		}
+	    	Assert.assertTrue(flagUrl, "Page url is not matching with expected");
+	    	
+		String expPageTitle = "Yes Madam - Salon at Home | Beauty Parlour Services at Home";
+		boolean flag = false;
+		    if (driver.getTitle().equalsIgnoreCase(expPageTitle)) {
+			flag = true;
+			// This method will return True when the page title matches with specified
+			// string
+			System.out.println("Yeah dewanshu... Page title matched good luck :-) ");
+		}
+	    	Assert.assertTrue(flag, "Page title is not matching with expected");
+		/*
+		 * String url = "https://www.yesmadam.com/"; driver.get(url); String actual =
+		 * driver.getTitle(); String expected = "Yes Madam - Salon at Home | Beauty Parlour Services at Home";
+		 * Assert.assertEquals(actual, expected);
+		 * System.out.println("Yeah dewanshu... Page title matched good luck");
+		 */
+
 	}
 
 }

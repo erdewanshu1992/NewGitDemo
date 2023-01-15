@@ -1,45 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-13T20:14:07 IST" name="Default suite" finished-at="2023-01-13T20:15:26 IST" duration-ms="79471">
+  <suite started-at="2023-01-15T04:00:40 IST" name="Default suite" finished-at="2023-01-15T04:00:47 IST" duration-ms="6841">
     <groups>
     </groups>
-    <test started-at="2023-01-13T20:14:07 IST" name="Default test" finished-at="2023-01-13T20:15:26 IST" duration-ms="79471">
-      <class name="TestCases.TestCases">
-        <test-method is-config="true" signature="webBrowserlaunch()[pri:0, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:07 IST" name="webBrowserlaunch" finished-at="2023-01-13T20:14:29 IST" duration-ms="22738" status="PASS">
+    <test started-at="2023-01-15T04:00:40 IST" name="Default test" finished-at="2023-01-15T04:00:47 IST" duration-ms="6841">
+      <class name="sample.NestedIfExample">
+        <test-method signature="testNestedIfExample()[pri:0, instance:sample.NestedIfExample@28f3b248]" started-at="2023-01-15T04:00:40 IST" name="testNestedIfExample" finished-at="2023-01-15T04:00:47 IST" duration-ms="6767" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- webBrowserlaunch -->
-        <test-method signature="navigate_to_SetUrLocation()[pri:1, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:29 IST" name="navigate_to_SetUrLocation" finished-at="2023-01-13T20:14:30 IST" duration-ms="882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate_to_SetUrLocation -->
-        <test-method signature="enter_userAddress()[pri:0, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:30 IST" name="enter_userAddress" finished-at="2023-01-13T20:14:39 IST" depends-on-methods="TestCases.TestCases.navigate_to_SetUrLocation" duration-ms="8522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enter_userAddress -->
-        <test-method signature="HomeScreenVerify()[pri:2, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:39 IST" name="HomeScreenVerify" finished-at="2023-01-13T20:14:40 IST" duration-ms="971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeScreenVerify -->
-        <test-method signature="HomeScreenMainCatVerify()[pri:3, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:40 IST" name="HomeScreenMainCatVerify" finished-at="2023-01-13T20:14:56 IST" duration-ms="16167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeScreenMainCatVerify -->
-        <test-method signature="SubCatsVerify()[pri:4, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:14:56 IST" name="SubCatsVerify" finished-at="2023-01-13T20:15:11 IST" duration-ms="15090" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SubCatsVerify -->
-        <test-method signature="CircleSubCatsVerify()[pri:5, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:15:11 IST" name="CircleSubCatsVerify" finished-at="2023-01-13T20:15:14 IST" duration-ms="2632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CircleSubCatsVerify -->
-        <test-method signature="AllAddToCartButtonClickedVerify()[pri:6, instance:TestCases.TestCases@1ffaf86]" started-at="2023-01-13T20:15:14 IST" name="AllAddToCartButtonClickedVerify" finished-at="2023-01-13T20:15:26 IST" duration-ms="12338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllAddToCartButtonClickedVerify -->
-      </class> <!-- TestCases.TestCases -->
+        </test-method> <!-- testNestedIfExample -->
+      </class> <!-- sample.NestedIfExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
