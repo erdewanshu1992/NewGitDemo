@@ -137,8 +137,8 @@ public class webMainPage {
 	}
 
 	public void TotalCostVerify() {
-		System.out.println(Text.getText());
-		// System.out.println(Text.getText().split("^[0-9]", '₹'));
+		//System.out.println(Text.getText());
+		 System.out.println(Text.getText().split("^[0-9]", '₹'));
 		Text.click();
 
 	}
@@ -177,9 +177,10 @@ public class webMainPage {
 	}
 
 	public void AddToCartButtonClicked() {
-		// System.out.println(AddToCart.getAttribute("id").split("-")[1]);
 		System.out.println(AddToCart.getCssValue("class"));
 		AddToCart.click();
+		System.out.println(AddToCart.getAttribute("id"));//split("-")[1]);
+
 	}
 
 	public void ServicePriceVerify() {

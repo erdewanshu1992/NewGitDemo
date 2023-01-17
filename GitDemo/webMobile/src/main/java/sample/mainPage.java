@@ -6,26 +6,31 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class mainPage {
 	WebDriver driver;
 
-	// Main Page Elements
+	@CacheLookup
 	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
 	WebElement SetUrLocationButton;
+	@CacheLookup
 	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
 	WebElement LocationSearch;
-	// Home Page Element
+	@CacheLookup
 	@FindBy(xpath = "//div[@class='cat_card']")
 	List<WebElement> MainCats;
+	@CacheLookup
 	@FindBy(xpath = "(//div[@class='cat_card'])[1]")
 	WebElement SalonAtHome;
 //	@FindBy(xpath = "//div[@class='cat_card']")
 //	List<WebElement> AllCats;
+	@CacheLookup
 	@FindBy(xpath = "//*[@id]/div/div[1]/div/div/div[3]/span[2]/a[1]/div/img")
 	WebElement BestSeller;
+	@CacheLookup
 	@FindBy(xpath = "//a[@class='subcat_anchor']")
 	List<WebElement> CircleSubCats;
 

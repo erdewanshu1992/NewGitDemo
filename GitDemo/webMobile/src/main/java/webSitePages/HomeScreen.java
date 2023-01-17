@@ -4,13 +4,16 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomeScreen {
 	WebDriver driver;
+	@CacheLookup
 	@FindBy(xpath = "//div[@class='cat_card']")
 	List<WebElement> MainCats;
+	@CacheLookup
 	@FindBy(xpath = "(//div[@class='cat_card'])[1]")
 	WebElement SalonAtHome;
 

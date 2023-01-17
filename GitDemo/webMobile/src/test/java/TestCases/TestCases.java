@@ -6,6 +6,8 @@ import webSitePages.AndroidChromeTest;
 import webSitePages.CartScreen;
 import webSitePages.CatsScreen;
 import webSitePages.HomeScreen;
+import webSitePages.LoginThroughServices;
+import webSitePages.ServiceScreen;
 import webSitePages.locationSet;
 import webSitePages.webMobileLogin;
 
@@ -65,7 +67,7 @@ public class TestCases extends AndroidChromeTest {
 
 	@Test(priority = 6)
 	public void CircleSubCatsVerify() {
-		CartScreen ref = new CartScreen(driver);
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.CircleSubCats();
 
 	}
@@ -73,61 +75,84 @@ public class TestCases extends AndroidChromeTest {
 	@Test(priority = 7)
 
 	public void ServiceSubHeadingVerify() {
-		CartScreen ref = new CartScreen(driver);
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.ServiceSubHeading();
 	}
 
 	@Test(priority = 8)
 
 	public void AllProductDetailsVerify() {
-		CartScreen ref = new CartScreen(driver);
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AllProductDetails();
 	}
 
 	@Test(priority = 9)
 
-	public void AddToCartButtonClicked() {
-		CartScreen ref = new CartScreen(driver);
+	public void AddToCartButtonClicked() throws InterruptedException {
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AddToCartButtonClicked();
-		// ref.ServiceTimeVerify();// particular service time
-		// ref.ServicePriceVerify();// particular service price
+		ref.ServiceTimeVerify();// particular service time
+	    ref.ServicePriceVerify();// particular service price
 
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, enabled = false)
 
-	public void AddToCartButtonClicked3() {
-		CartScreen ref = new CartScreen(driver);
+	public void AddToCartButtonClicked3() throws InterruptedException {
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AddToCartButtonClicked3();
-		// ref.ServiceTimeVerify();// particular service time
-		// ref.ServicePriceVerify();// particular service price
+	    ref.ServiceTimeVerify();// particular service time
+		ref.ServicePriceVerify();// particular service price
 
-	}
-
-	@Test(priority = 9)
-
-	public void AddToCartButtonClicked2() {
-		CartScreen ref = new CartScreen(driver);
-		ref.AddToCartButtonClicked2();
-		// ref.ServiceTimeVerify();// particular service time
-		// ref.ServicePriceVerify();// particular service price
-
-	}
-
-	@Test(priority = 10)
-
-	public void TotalCostVerify() throws InterruptedException {
-		CartScreen ref = new CartScreen(driver);
-		ref.TotalCostVerify();
 	}
 
 	@Test(priority = 11)
 
+	public void AddToCartButtonClicked2() throws InterruptedException {
+		ServiceScreen ref = new ServiceScreen(driver);
+		ref.AddToCartButtonClicked2();
+	    ref.ServiceTimeVerify();// particular service time
+		ref.ServicePriceVerify();// particular service price
+
+	}
+
+	@Test(priority = 12)
+
+	public void TotalCostVerify() throws InterruptedException {
+		ServiceScreen ref = new ServiceScreen(driver);
+		ref.TotalCostVerify();
+	}
+
+	@Test(priority = 13)
+
 	public void TotalTimeVerify() throws InterruptedException {
-		CartScreen ref = new CartScreen(driver);
+		ServiceScreen ref = new ServiceScreen(driver);
 		ref.TotalTimeVerify();
 		ref.TotalItemsVerify();// Items Quantity
 
 	}
+	@Test(priority = 14)
 
+	public void CheckoutVerify() throws InterruptedException {
+		ServiceScreen ref = new ServiceScreen(driver);
+		ref.CheckoutButtonVerify();
+	}
+	/*
+	@Test(priority = 15)
+	public void LoginVerify() throws InterruptedException {
+		LoginThroughServices ref = new LoginThroughServices(driver);
+		ref.enterMobileNumber("9855566677");
+		ref.ClickOnSubmitButton();
+		ref.enterOTP("2222");
+	}
+	@Test(priority = 16 )
+	public void SlotScreenVerify() {
+		CartScreen ref = new CartScreen(driver);
+		ref.ChangeButtonVerify();
+		ref.DoneButtonVerify();
+		ref.RemoveButtonVerify();
+		ref.RemoveButtonNoVerify();
+*/
+		
+	//}
 }

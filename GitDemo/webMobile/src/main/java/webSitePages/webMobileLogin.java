@@ -2,6 +2,7 @@ package webSitePages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -9,14 +10,19 @@ import org.testng.Assert;
 public class webMobileLogin {
 	WebDriver driver;
 
+	@CacheLookup
 	@FindBy(xpath = "//*/div/div[2]/div[1]/div[2]/div/div[1]/span")
 	WebElement GetTheAppText;
+	@CacheLookup
 	@FindBy(xpath = "//span[@class='city_available']")
 	WebElement CityText;
+	@CacheLookup
 	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
 	WebElement SetUrLocationText;
+	@CacheLookup
 	@FindBy(xpath = "//*/div/div[2]/div[1]/div[2]/div/div[3]/span[2]")
 	WebElement AccountText;
+	@CacheLookup
 	@FindBy(xpath = "//button[@class=\"select_location_btn\"]")
 	WebElement SetUrLocationButton;
 
