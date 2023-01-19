@@ -6,7 +6,7 @@
       <class name="TestCases.TestCases">
         <methods>
           <include name="webBrowserlaunch"/>
-          <include name="AddToCartButtonClicked3"/>
+          <include name="AllProductDetailsVerify"/>
         </methods>
       </class> <!-- TestCases.TestCases -->
     </classes>

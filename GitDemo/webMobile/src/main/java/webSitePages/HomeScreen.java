@@ -22,19 +22,29 @@ public class HomeScreen {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void lostOfAllMainCats() {
+	public void lostOfAllMainCats() throws InterruptedException {
 		List<WebElement> myElements = MainCats;
         System.out.println("Size of List: "+myElements.size());
+        WebElement e1 = null;
         for(WebElement e : myElements) 
         {        
         	String CatLists = e.getText();
 			CatLists = CatLists.replaceAll("\\n", " ");
             //System.out.print("Main Categories Name :" +e.getText()+"\t");
-            System.out.println("Main Categorie Name :" +CatLists);
+            if (CatLists.contains("Salon At Home"))
+            {
+            	System.out.println("***************Inside**********");
+            	e1 = e;
+            	
+            }
+			System.out.println("Main Categorie Name :" +CatLists);
             
         }
-	
-		
+        
+		if (e1 != null) {
+			Thread.sleep(5000);
+			e1.click();
+		}
 //		List<WebElement> allCats = MainCats;
 //		System.out.println(allCats.size());
 //
@@ -46,9 +56,9 @@ public class HomeScreen {
 
 	}
 
-	public void SalonAtHome() {
-		SalonAtHome.click();
+//	public void SalonAtHome() {
+//		SalonAtHome.click();
 
-	}
+//	}
 
 }

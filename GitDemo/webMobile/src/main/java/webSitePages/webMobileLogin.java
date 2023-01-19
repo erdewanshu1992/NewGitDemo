@@ -66,6 +66,17 @@ public class webMobileLogin {
 	}
 
 	public void SetUrLocationText() {
+		
+		// Check that “SetUrLocationText button” is enabled or not. 
+	     WebElement SetUrLocationButton = SetUrLocationText; 
+	     if(SetUrLocationButton.isEnabled()) { 
+	         System.out.println("Search button is enabled. Return: " +SetUrLocationButton.isEnabled()); 
+	     } 
+	     else { 
+	         System.out.println("Search button is not enabled. Return: " +SetUrLocationButton.isEnabled()); 
+	     } 
+		
+		// dusra case
 		String expPageButtonText = "SET YOUR LOCATION";
 		boolean flag = false;
 		if (SetUrLocationText.getText().equalsIgnoreCase(expPageButtonText)) {

@@ -19,7 +19,7 @@ public class LoginWithMultipleSetsOfData {
 	@DataProvider(name = "credentilas")
 	public Object[][] getData() {
 		
-		returen new Object[][] {
+		return new Object[][] {
 			{"bothcorrect","",""},
 			{"bothwrong","",""},
 			{"correctusername","",""},

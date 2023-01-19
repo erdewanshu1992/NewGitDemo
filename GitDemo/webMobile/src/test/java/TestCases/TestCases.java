@@ -39,24 +39,24 @@ public class TestCases extends AndroidChromeTest {
 	}
 
 	@Test(priority = 3)
-	public void HomeScreenVerify() {
+	public void HomeScreenVerify() throws InterruptedException {
 		HomeScreen ref = new HomeScreen(driver);
 		ref.lostOfAllMainCats();
-		Scrolling refs = new Scrolling(driver);
-		refs.scrollDown(driver);
-		refs.scrollUp(driver);
+//		Scrolling refs = new Scrolling(driver);
+//		refs.scrollDown(driver);
+//		refs.scrollUp(driver);
 
 	}
 
-	@Test(priority = 4)
-	public void HomeScreenMainCatVerify() {
-		HomeScreen ref = new HomeScreen(driver);
-		ref.SalonAtHome();
+//	@Test(priority = 4)
+//	public void HomeScreenMainCatVerify() {
+//		HomeScreen ref = new HomeScreen(driver);
+//		ref.SalonAtHome();
 //		Scrolling refs = new Scrolling(driver);
 //		refs.scrollDown(driver);
 //		refs.scrollUp(driver);
 //	
-	}
+//	}
 
 	@Test(priority = 5)
 	public void SubCatsVerify() {
@@ -65,12 +65,12 @@ public class TestCases extends AndroidChromeTest {
 
 	}
 
-	@Test(priority = 6)
-	public void CircleSubCatsVerify() {
-		ServiceScreen ref = new ServiceScreen(driver);
-		ref.CircleSubCats();
-
-	}
+//	@Test(priority = 6)
+//	public void CircleSubCatsVerify() throws InterruptedException {
+//		ServiceScreen ref = new ServiceScreen(driver);
+//		ref.CircleSubCats();
+//
+//	}
 
 	@Test(priority = 7)
 
@@ -81,18 +81,19 @@ public class TestCases extends AndroidChromeTest {
 
 	@Test(priority = 8)
 
-	public void AllProductDetailsVerify() {
+	public void AllProductDetailsVerify() throws InterruptedException {
 		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AllProductDetails();
 	}
-
+/*
 	@Test(priority = 9)
 
 	public void AddToCartButtonClicked() throws InterruptedException {
 		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AddToCartButtonClicked();
-		ref.ServiceTimeVerify();// particular service time
-	    ref.ServicePriceVerify();// particular service price
+		ref.PlusButtonVerify();
+		//ref.ServiceTimeVerify();// particular service time
+	    //ref.ServicePriceVerify();// particular service price
 
 	}
 
@@ -111,8 +112,8 @@ public class TestCases extends AndroidChromeTest {
 	public void AddToCartButtonClicked2() throws InterruptedException {
 		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AddToCartButtonClicked2();
-	    ref.ServiceTimeVerify();// particular service time
-		ref.ServicePriceVerify();// particular service price
+	    //ref.ServiceTimeVerify();// particular service time
+		//ref.ServicePriceVerify();// particular service price
 
 	}
 

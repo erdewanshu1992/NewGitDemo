@@ -14,13 +14,21 @@ public class locationSet {
 	@CacheLookup
 	@FindBy(xpath = "(//input[@type=\"text\"])[3]")
 	WebElement LocationSearch;
-	
+
 	public locationSet(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void enterAddressName(String enterUrLocation) throws InterruptedException {
+		WebElement searchBox = LocationSearch;
+
+		if (searchBox.isEnabled()) {
+			System.out.println("Search box is enabled. Return: " + searchBox.isEnabled());
+		} else {
+			System.out.println("Search box is disabled. Return: " + searchBox.isEnabled());
+		}
+		// Enter text in the “Text Search” box.
 		LocationSearch.sendKeys(enterUrLocation);
 		Actions act = new Actions(driver);
 		act.sendKeys(Keys.DOWN).perform();

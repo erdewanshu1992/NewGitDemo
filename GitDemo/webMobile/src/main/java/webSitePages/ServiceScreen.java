@@ -34,7 +34,7 @@ public class ServiceScreen {
 	@FindBy(xpath = "//*/div[2]/div[1]/div[2]/span[3]")
 	WebElement AddToCart2;
 	@CacheLookup
-	@FindBy(xpath = "//*/div[1]/div[1]/div[2]/span[3]")
+	@FindBy(xpath = "(//span[@class='addtocart'])[3]")
 	WebElement AddToCart;
 	@CacheLookup
 	@FindBy(xpath = "(//span[@class='price'])[1]")
@@ -74,14 +74,26 @@ public class ServiceScreen {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void CircleSubCats() {
+	public void CircleSubCats() throws InterruptedException {
 
 		List<WebElement> myElements = CircleSubCats;
 		System.out.println("Size of List: " + myElements.size());
+        WebElement e1 = null;
+
 		for (WebElement e : myElements) {
 			String CircleSubCat = e.getText();
 			CircleSubCat.replaceAll("\\n", " ");
+			 if (CircleSubCat.contains("BestSellers"))
+	            {
+	            	System.out.println("***************Inside**********");
+	            	e1 = e;
+	            	
+	            }
 			System.out.println("Sub-Categories Name :" + CircleSubCat);
+		}
+		if (e1 != null) {
+			Thread.sleep(5000);
+			e1.click();
 		}
 
 	}
@@ -107,27 +119,36 @@ public class ServiceScreen {
 
 	}
 
-	public void AllProductDetails() {
+	public void AllProductDetails() throws InterruptedException {
 
 		List<WebElement> myElements = ProductDtl;
 		System.out.println("Size of List: " + myElements.size());
-		for (WebElement e : myElements) {
-			String CircleSubCat = e.getText();
-			CircleSubCat.replaceAll("\\n", " ");
-			System.out.println("Service Name :" + e.getText());
-			// if (e.getText().equals("Waxology - Honey (Full Arms, Full Legs &
-			// Underarms)")) {
-			// ProductDtl.get(2).click();
-			// e.click();
-			// }
+        WebElement e1 = null;
 
+		for (WebElement e : myElements) {
+			String ProductDtl = e.getText();
+			ProductDtl.replaceAll("\\n", " ");
+			
+			if (ProductDtl.contains("Waxology - Honey (Full Arms, Full Legs & Underarms)"))
+            {
+            	System.out.println("***************Inside**********");
+            	e1 = e;
+            	
+            }
+			System.out.println("Service Name :" + e.getText());
+			if (e1 != null) {
+				Thread.sleep(5000);
+				//e1.click();
+				AddToCart.click();
+
+			}
 		}
 
 	}
 
 	public void AddToCartButtonClicked() throws InterruptedException {
 		AddToCart.click();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		//System.out.println(MaxText.getCssValue("class"));
 		//System.out.println(AddToCart.getCssValue("id"));//1 hr 5mins and ₹749/-53% off₹1600
 
