@@ -1,4 +1,4 @@
-package TestCases;
+package sample;
 
 import org.testng.annotations.Test;
 
@@ -49,6 +49,17 @@ public class TestCases extends AndroidChromeTest {
 //		refs.scrollUp(driver);
 
 	}
+
+//	@Test(priority = 4)
+//	public void HomeScreenMainCatVerify() {
+//		HomeScreen ref = new HomeScreen(driver);
+//		ref.SalonAtHome();
+//		Scrolling refs = new Scrolling(driver);
+//		refs.scrollDown(driver);
+//		refs.scrollUp(driver);
+//	
+//	}
+
 	@Test(priority = 5)
 	public void SubCatsVerify() throws TesseractException {
 		CatsScreen ref = new CatsScreen(driver);
@@ -76,18 +87,18 @@ public class TestCases extends AndroidChromeTest {
 		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AllProductDetails();
 	}
-
+/*
 	@Test(priority = 9)
 
 	public void AddToCartButtonClicked() throws InterruptedException {
 		ServiceScreen ref = new ServiceScreen(driver);
 		ref.AddToCartButtonClicked();
-		//`ref.PlusButtonVerify();
+		ref.PlusButtonVerify();
 		//ref.ServiceTimeVerify();// particular service time
 	    //ref.ServicePriceVerify();// particular service price
 
 	}
-/*
+
 	@Test(priority = 10, enabled = false)
 
 	public void AddToCartButtonClicked3() throws InterruptedException {

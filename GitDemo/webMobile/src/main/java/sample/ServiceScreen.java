@@ -1,4 +1,4 @@
-package webSitePages;
+package sample;
 
 import java.util.List;
 import org.openqa.selenium.WebDriver;
@@ -88,13 +88,16 @@ public class ServiceScreen {
 
 			if (CircleSubCat.contains(selectedServiceName)) {
 				e1 = e;
+
 			}
 		}
 		if (e1 != null) {
 			Thread.sleep(5000);
 			e1.click();
 		}
+
 	}
+
 	public void ServiceSubHeading() {
 
 		List<WebElement> myElements = SubHeading;
@@ -103,7 +106,9 @@ public class ServiceScreen {
 			String subheading = e.getText();
 			subheading.replaceAll("\\n", " ");
 			System.out.println("Sub-Heading Name :" + subheading);
-			//SubHeading.get(4).click();
+//			 SubHeading.get(4).click();
+			
+
 		}
 
 	}
@@ -123,6 +128,7 @@ public class ServiceScreen {
 		}
 
 	}
+
 	public void AddToCartButtonClicked() throws InterruptedException {
 		AddToCart.click();
 		// Thread.sleep(5000);
@@ -131,6 +137,7 @@ public class ServiceScreen {
 		// off₹1600
 
 	}
+
 	public void PlusButtonVerify() {
 		for (int i = 0; i < 5; i++) {
 			PlusButton.click();
@@ -142,6 +149,7 @@ public class ServiceScreen {
 		System.out.println(MaxText.getCssValue("class"));
 
 	}
+
 	public void TotalCostVerify() {
 		System.out.println(Text.getText());
 		// System.out.println(Text.getText().split("^[0-9]", '₹'));
@@ -194,3 +202,46 @@ public class ServiceScreen {
 
 }
 
+/*
+ * List<WebElement> myElements = AllAddToCart;
+ * System.out.println("Size of List: "+myElements.size()); for(WebElement e :
+ * myElements) { String CircleSubCat = e.getText();
+ * CircleSubCat.replaceAll("\\n", " "); System.out.println("Service Name :"
+ * +e.getText()); //System.out.print("Services name :" +e.getText()+"\t");
+ * //System.out.print("Text within the Anchor tab :" +e.getText());
+ * //System.out.println("Anchor: "+e.getAttribute("href"));
+ * //System.out.println("Anchor: "+e.getAttribute("class"));
+ * //System.out.println("Anchor: "+e.getAttribute("h4"));
+ * if(e.getText().equals("Waxology - Rica (Full Arms, Full Legs & Underarms)"))
+ * { AddToCart.click(); }
+ * 
+ * } // WebElement element = AddToCart; // JavascriptExecutor jse =
+ * (JavascriptExecutor) driver; //
+ * jse.executeScript("arguments[0].scrollIntoView()", element); }
+ * 
+ * // public void AddToCartButtonClicked2() { // WebElement element =
+ * AddToCart2; // JavascriptExecutor jse = (JavascriptExecutor)driver; //
+ * jse.executeScript("arguments[0].scrollIntoView()", element); //
+ * AddToCart2.click(); // System.out.println(AddToCart2.getCssValue("class"));
+ * // // }
+ * 
+ * // List<WebElement> allElements= AllAddToCart; // // for(WebElement ele
+ * :allElements) { // System.out.println("Name + Number===>"+ele.getText()); //
+ * String s=ele.getText(); // s=s.substring(s.indexOf("(")+1, s.indexOf(")"));
+ * // System.out.println("Number==>"+s); // }
+ * 
+ * //System.out.print("Text within the Anchor tab :" +e.getText()+"\t");
+ * //System.out.print("Text within the Anchor tab :" +e.getText());
+ * //System.out.println("Anchor: "+e.getAttribute("href")); } //List<WebElement>
+ * allCats = CircleSubCats; //System.out.println(allCats.size());
+ * 
+ * // for (WebElement CircleSubCats : allCats) { // String CircleSubCat =
+ * CircleSubCats.getText(); // CircleSubCat.replaceAll("\\n", " "); //
+ * System.out.println("Sub-Categories Name :" +CircleSubCat); // // }
+ * 
+ * 
+ * // // if(i==5) { // System.out.println(MaxText.getText()); // }
+ * 
+ * 
+ * 
+ */

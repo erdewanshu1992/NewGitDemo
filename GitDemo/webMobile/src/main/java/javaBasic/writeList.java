@@ -4,6 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.lowagie.text.List;
+
 public class writeList {
 	private static final int SIZE = 0;
 
@@ -15,7 +17,7 @@ public class writeList {
 
 	        out = new PrintWriter(new FileWriter("OutFile.txt"));
 	        for (int i = 0; i < SIZE; i++) {
-	            out.println("Value at: " + i + " = " + list.get(i));
+	          //  out.println("Value at: " + i + " = " + List.get(i));
 	        }
 	    } catch (IndexOutOfBoundsException e) {
 	        System.err.println("Caught IndexOutOfBoundsException: "

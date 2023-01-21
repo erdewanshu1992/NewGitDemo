@@ -1,4 +1,4 @@
-package webSitePages;
+package sample;
 
 import java.util.List;
 
